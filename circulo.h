@@ -11,6 +11,11 @@ class Circulo : public QPoint
 public:
     Circulo();
     Circulo(int xpos, int ypos);
+    QPixmap lienzo;
+
+private:
+    int PosY();
+
 
 };
 

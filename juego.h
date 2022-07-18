@@ -45,6 +45,7 @@ protected:
 private:
     Ui::Juego *ui;
     Circulo *m_circulo;
+     QPixmap lienzo;
     void dibujar();
    QImage *mImagen;
    QPainter *mPainter;

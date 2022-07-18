@@ -14,7 +14,7 @@ Juego::Juego(QWidget *parent)
         mImagen->fill(Qt::white);
         mPainter = new QPainter(mImagen);
         mPainter->setRenderHint(QPainter::Antialiasing);
-    QPainter painter();
+    QPainter painter(&lienzo);
 
         int x = 0;
         int y = 0;
@@ -46,6 +46,8 @@ Juego::~Juego()
 
 void Juego::on_btnArriba_released()
 {
+
+    //m_circulo->setY(m_circulo->getY()-5);
 
 }
 
@@ -106,7 +108,7 @@ void Juego::dibujar()
       pincel.setWidth(3);
       // Dibujar una linea
       mPainter->setPen(pincel);
-     // mPainter->drawEllipse(m_circulo->getPosx(), m_circulo->getPosy(), m_circulo->getSize(), m_circulo->getSize());
+      mPainter->drawEllipse(200, 180, 100, 100);
       update();
 }
 
