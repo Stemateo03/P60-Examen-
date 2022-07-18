@@ -2,6 +2,9 @@
 #define JUEGO_H
 
 #include <QMainWindow>
+#include <QDebug>
+#include "configuracion.h"
+#include "circulo.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Juego; }
@@ -24,7 +27,12 @@ private slots:
 
     void on_btnDerecha_released();
 
+    void on_actionConfigraci0n_triggered();
+
+    void on_actionSalir_triggered();
+
 private:
     Ui::Juego *ui;
+    Circulo *m_circulo;
 };
 #endif // JUEGO_H
