@@ -1,7 +1,7 @@
 #include "circulo.h"
 
 Circulo::Circulo()
-    :QPoint(0,0)
+    :QPoint(100,100 )
 {
 
 }
@@ -11,3 +11,5 @@ Circulo::Circulo(int xpos, int ypos)
 {
 
 }
+
+

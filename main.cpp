@@ -1,3 +1,6 @@
+
+//Steven Calapaqui 1726349648
+
 #include "juego.h"
 
 #include <QApplication>
