@@ -1,6 +1,6 @@
 #include "juego.h"
 #include "ui_juego.h"
-
+#include "circulo.h"
 Juego::Juego(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::Juego)
@@ -10,10 +10,12 @@ Juego::Juego(QWidget *parent)
     m_circulo = new Circulo();
     m_circulo->setX(centro.x());
     m_circulo->setY(centro.y());
+
 }
 
 Juego::~Juego()
 {
+
     delete ui;
 }
 

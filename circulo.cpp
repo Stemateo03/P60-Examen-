@@ -1,7 +1,7 @@
 #include "circulo.h"
 
 Circulo::Circulo()
-    :QPoint(100,100 )
+    :QPoint(0,0 )
 {
 
 }
@@ -11,5 +11,14 @@ Circulo::Circulo(int xpos, int ypos)
 {
 
 }
+
+/*void Circulo::dibujar()
+{
+   // QPainter (&lienzo);
+
+    //int x = 0;
+    //int y = 0;
+
+}*/
 
 

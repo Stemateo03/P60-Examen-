@@ -31,6 +31,8 @@ private:
     int m_dimension;
 
     void setWidgetColor();
+    QImage *mImagen;
+    QPainter *mPainter;
 };
 
 #endif // CONFIGURACION_H
