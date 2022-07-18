@@ -6,7 +6,10 @@ Juego::Juego(QWidget *parent)
     , ui(new Ui::Juego)
 {
     ui->setupUi(this);
-    qDebug() << ui->marco->geometry().center();
+    QPoint centro = ui->marco->geometry().center();
+    m_circulo = new Circulo();
+    m_circulo->setX(centro.x());
+    m_circulo->setY(centro.y());
 }
 
 Juego::~Juego()
