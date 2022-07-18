@@ -22,6 +22,7 @@ public:
     void setColor(const QColor &newColor);
     void setDimension(int newDimension);
 
+
 private slots:
     void on_btnColor_released();
 
@@ -31,8 +32,7 @@ private:
     int m_dimension;
 
     void setWidgetColor();
-    QImage *mImagen;
-    QPainter *mPainter;
+
 };
 
 #endif // CONFIGURACION_H

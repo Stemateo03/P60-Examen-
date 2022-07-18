@@ -9,19 +9,13 @@ Configuracion::Configuracion(QWidget *parent) :
     ui->setupUi(this);
     m_color.setRgb(165,29,45);
     setWidgetColor();
-    mImagen = new QImage(this->size(),QImage::Format_ARGB32_Premultiplied);
-    // Rellenar la imagen de color blanco
-    mImagen->fill(Qt::white);
-    // Instanciar el Painter a partir de la imagen
-    mPainter = new QPainter(mImagen);
-    mPainter->setRenderHint(QPainter::Antialiasing);
+
 }
 
 Configuracion::~Configuracion()
 {
     delete ui;
-    delete mPainter;
-    delete mImagen;
+
 }
 
 void Configuracion::on_btnColor_released()
@@ -39,6 +33,7 @@ void Configuracion::setDimension(int newDimension)
     m_dimension = newDimension;
 }
 
+
 void Configuracion::setWidgetColor()
 {
     int r = m_color.red();
@@ -55,6 +50,7 @@ const QColor &Configuracion::color() const
 
 int Configuracion::dimension() const
 {
+
     return m_dimension;
 }
 
